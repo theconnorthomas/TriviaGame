@@ -1,4 +1,5 @@
-var time = 3;
+var time = 31;
+var x = 0;
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unanswered = 0;
@@ -55,7 +56,7 @@ function start() {
 }
 
 function populateQuestion() {
-    currentQuestion = questions[0];
+    currentQuestion = questions[x];
     for (i = 0; i < 4; i++) {
         $("#questionText").text(currentQuestion.question);
         $("#btn" + i).text(currentQuestion.answers[i]);
@@ -96,8 +97,10 @@ function countdown() {
 function timesUp() {
 
     unanswered++;
+    x++;
     console.log(unanswered);
     clearInterval(intervalId);
+    populateQuestion();
 
 }
 
@@ -106,7 +109,9 @@ function correctAnswer() {
     $("#message").html("<h2>Correct!</h2>");
 
     correctAnswers++;
+    x++;
     clearInterval(intervalId);
+    populateQuestion();
 }
 
 function incorrectAnswer() {
@@ -114,6 +119,8 @@ function incorrectAnswer() {
     $("#message").html("<h2>Wrong!</h2>");
 
     incorrectAnswers++;
+    x++;
     clearInterval(intervalId);
+    populateQuestion();
 }
 
