@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./assets/images/starkFavicon.png" />
+    <title>Game of Thones Trivia</title>
+</head>
+
+<body>
+
+    <!-- <audio loop autoplay src="./assets/music/gotTheme.mp3"></audio> -->
+
+    <div class="grid">
+
+        <h1>Game of Thones</h1>
+        <h1>Trivia</h1>
+
+<button type="button" class="btn btn-primary btn-lg btn-block" id="startBtn">START</button>
+
+        <div id="quiz">
+
+            <div id="countdownTimer"></div>
+
+            <div id="message"></div>
+
+            <hr style="margin-bottom: 20px">
+
+            <p id="questionText">Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
+            
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn0">A:</button>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn1">B:</button>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn2">C:</button>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn3">D:</button>
+
+            <hr style="margin-top: 50px">
+
+            <footer>
+
+                <p id="progress">Question 1 of 10</p>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>
