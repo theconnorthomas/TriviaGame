@@ -20,41 +20,61 @@
 
     <!-- <audio loop autoplay src="./assets/music/gotTheme.mp3"></audio> -->
 
-    <div class="grid">
+    <div class="wrapper">
 
-        <h1>Game of Thones</h1>
-        <h1>Trivia</h1>
+        
 
-<button type="button" class="btn btn-primary btn-lg btn-block" id="startBtn">START</button>
-
-        <div id="quiz">
-
-            <div id="countdownTimer"></div>
-
-            <div id="message"></div>
-
-            <hr style="margin-bottom: 20px">
-
-            <p id="questionText">Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
-            
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn0">A:</button>
-
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn1">B:</button>
-
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn2">C:</button>
-
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn3">D:</button>
-
-            <hr style="margin-top: 50px">
-
-            <footer>
-
-                <p id="progress">Question 1 of 10</p>
-
-            </footer>
-
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h1 id="title">Game of Thrones Trivia</h1>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="startBtn">START</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div id="quiz">
 
+                    <div id="countdownTimer"></div>
+
+                    <div id="message"></div>
+
+                    <hr>
+                    <div id="subQuiz">
+                        <p id="questionText"></p>
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="btn0"></button>
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="btn1"></button>
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="btn2"></button>
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="btn3"></button>
+                    </div>
+                    
+                    <img id="gif" src="" alt="">
+                    <hr>
+
+                    <footer>
+
+                        <p id="progress"></p>
+
+                    </footer>
+
+                </div>
+                <div id="results">
+                    <h3 id="right"></h3>
+                    <h3 id="wrong"></h3>
+                    <h3 id="timeout"></h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./assets/javascript/app.js"></script>
